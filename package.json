@@ -1,0 +1,27 @@
+{
+  "name": "pelennor",
+  "version": "1.0.0",
+  "description": "Battle of pelennor fields",
+  "main": "./src/main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Japca/pelennor.git"
+  },
+  "author": "Jakub Krhovjak",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Japca/pelennor/issues"
+  },
+  "homepage": "https://github.com/Japca/pelennor#readme",
+  "devDependencies": {
+    "electron": "^2.0.2"
+  },
+  "dependencies": {
+    "g": "^2.0.1",
+    "npm": "^6.1.0"
+  }
+}
