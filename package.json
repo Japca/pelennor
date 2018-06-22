@@ -1,6 +1,6 @@
 {
   "name": "pelennor",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Battle of Pelennor field",
   "main": "./src/main.js",
   "dependencies": {

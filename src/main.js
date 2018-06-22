@@ -7,7 +7,7 @@ function createWindow () {
     win = new BrowserWindow({width: 800, height: 600})
 
     // and load the index.html of the app.
-    win.loadFile('index.html')
+    win.loadFile('./dist/index.html')
 
     // Open the DevTools.
     win.webContents.openDevTools()
@@ -32,6 +32,3 @@ app.on('activate', () => {
         createWindow()
     }
 })
-
-
-app.on('ready', createWindow)
