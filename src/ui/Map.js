@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import Hexagon from './Hexagon'
 //
-// import css from '../css/main.css'
+import css from '../css/main.css'
 
 const HEXAGON_SIZE = 80;
 const MAP_SIZE = 5;
@@ -31,9 +31,10 @@ class Map extends Component {
 
     generateHexagons = () => {
         let hexagons = [];
-        for(let x = 1; x <= MAP_SIZE; x++) {
-            for (let y = 1; y <= MAP_SIZE; y++) {
-                hexagons.push(<Hexagon Hexagon key={`${x}-${y}`} size={HEXAGON_SIZE} position={{x, y}}/>)
+        for(let y = 0; y < MAP_SIZE; y++) {
+            for (let x = 0; x < MAP_SIZE; x++) {
+                let offsetX = y % 2 === 0 ? 0 : HEXAGON_SIZE / 2;
+                hexagons.push(<Hexagon Hexagon key={`${x + 1}-${y + 1}`} size={HEXAGON_SIZE} position={{x, y}} data={{offsetX}}/>)
             }
         }
         return hexagons;
@@ -41,7 +42,7 @@ class Map extends Component {
 
     render() {
         return (
-            <svg id="map">
+            <svg id="map" width="100%" height="100%">
                 {this.generateHexagons()}
             </svg>
         )
