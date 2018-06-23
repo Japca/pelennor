@@ -5,7 +5,6 @@
   "main": "./src/main.js",
   "dependencies": {
     "electron": "^2.0.2",
-    "g": "^2.0.1",
     "npm": "^6.1.0",
     "react": "^16.3.0",
     "react-dom": "^16.3.0",
